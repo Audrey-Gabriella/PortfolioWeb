@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	What is your name?
+{% endblock %}
+
+{% block content %}
+	<p>your name is needed to sign up to this web</p>
+	<form action = "{{url_for('result')}}" method = 'post'>
+		<input type="text" name="name" placeholder="enter your name">
+		<button>submit</button>
+	</form>
+{% endblock %}
+
+{% block info %}
+	<a href="{{url_for('info')}}">info</a>
+{% endblock %}

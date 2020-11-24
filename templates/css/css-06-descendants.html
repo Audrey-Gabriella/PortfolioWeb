@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Descendant</title>
+	<style type="text/css">
+		/* ol only means that everyone is treated equally
+		ol {
+			color:red;
+		} */
+
+		/* a > b means that only the descendant is being treated*/
+		ul > li {
+			color:blue;
+		}
+
+		ol > li {
+			color:orange;
+		}
+		/*The order is from the top and then to the bottom*/
+
+	</style>
+</head>
+<body>
+	Family Tree
+	<ol>
+		<li>Grandma</li>
+		<li>Grandpa</li>
+		<ul>
+			<li>First Son</li>
+			<li>Second Son</li>
+		</ul>
+		<li>Cousin</li>
+	</ol>
+
+</body>
+</html>
